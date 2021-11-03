@@ -1,17 +1,15 @@
+const net = require("net");
+
 const connect = function () {
   const conn = net.createConnection({
-    host: // IP address here,
-    port: // PORT number here,
+    host: "165.227.47.243",
+    port: 50541,
   });
 
   // interpret incoming data as text
   conn.setEncoding("utf8");
 
-  console.log('You have been disconnected');
-
   return conn;
 };
 
-
-//module.exports = { connect };
-module.exports = { conn: conn };
+module.exports = { conn: connect };
