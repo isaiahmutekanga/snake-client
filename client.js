@@ -11,6 +11,8 @@ const connect = function () {
   conn.on("connect", () => {
     console.log("Connection established");
     conn.write("Name: IM");
+
+    //setTimeout();
   });
 
   return conn;
