@@ -11,11 +11,13 @@ const connect = function () {
   conn.on("connect", () => {
     console.log("Connection established");
     conn.write("Name: IM");
-
     //setTimeout();
   });
+  // setInterval(function () {
+  //   conn.write("Move: down");
+  // }, 3000);
 
   return conn;
 };
 
-module.exports = { conn: connect };
+module.exports = { connect };
